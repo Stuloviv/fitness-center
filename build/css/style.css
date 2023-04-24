@@ -347,7 +347,7 @@ template {
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../../fonts/AlumniSans-SemiBold.woff") format("woff");
+  src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../fonts/AlumniSans-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Alumni Sans";
