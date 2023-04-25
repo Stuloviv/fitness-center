@@ -357,18 +357,11 @@ template {
   src: url("../fonts/AlumniSans-Bold.woff2") format("woff2"), url("../fonts/AlumniSans-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "Bebas Neue";
-  font-weight: 700;
+  font-family: "Alumni Sans";
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Bebas Neue";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff");
+  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"), url("../fonts/AlumniSans-ExtraBold.woff") format("woff");
 }
 *,
 *::before,
@@ -1329,7 +1322,7 @@ button,
   margin: 0;
   margin-bottom: 50px;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 97px;
   line-height: 110px;
   letter-spacing: 0.03em;
@@ -1339,6 +1332,7 @@ button,
 @media (max-width: 1199px) {
   .promo__title {
     max-width: 60%;
+    font-weight: 700;
     margin-right: 2px;
     margin-bottom: 37px;
     font-size: 10.5vw;
