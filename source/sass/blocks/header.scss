@@ -1,5 +1,9 @@
 .header {
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  @media (max-width: 767px) {
+    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  }
 }
 
 .header__container {
@@ -10,34 +14,55 @@
   }
 
   @media (max-width: 767px) {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap-reverse;
 
-  margin-bottom: -81px;
+  margin-bottom: -74px;
 
   @media (max-width: 1199px) {
     flex-wrap: wrap;
     align-items: center;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 25px;
   }
 }
 
 .header__logo {
   display: block;
+  width: 122px;
+  height: 44px;
+
+  &:hover .header__logo-icon {}
 
   @media (max-width: 1199px) {
-    margin-top: 5px;
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: 767px) {
+    width: 69px;
+    height: 24px;
   }
 }
 
 .header__logo-icon {
+  fill: $color-default-white;
+
+  &:hover {
+    fill: #c48e99;
+  }
+
   @media (max-width: 1199px) {
     width: 81px;
     height: 17px;
@@ -51,6 +76,7 @@
 
 .header__phone {
   display: block;
+  height: 32px;
 
   font-family: $ff-second-font;
   font-weight: 600;
@@ -60,6 +86,10 @@
   color: $color-default-white;
   text-align: right;
 
+  &:hover {
+    color: #95acc6;
+  }
+
   @media (max-width: 1199px) {
     font-size: 24px;
     line-height: 28px;
@@ -67,6 +97,8 @@
   }
 
   @media (max-width: 767px) {
+    height: 24px;
+
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;

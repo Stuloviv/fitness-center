@@ -1148,7 +1148,12 @@ button,
 }
 
 .header {
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+@media (max-width: 767px) {
+  .header {
+    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  }
 }
 
 .header__container {
@@ -1161,7 +1166,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__container {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
 
@@ -1172,9 +1177,12 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
-  margin-bottom: -81px;
+  margin-bottom: -74px;
 }
 @media (max-width: 1199px) {
   .header__top {
@@ -1183,19 +1191,39 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .header__top {
+    margin-bottom: 25px;
   }
 }
 
 .header__logo {
   display: block;
+  width: 122px;
+  height: 44px;
 }
 @media (max-width: 1199px) {
   .header__logo {
-    margin-top: 5px;
+    width: 82px;
+    height: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    width: 69px;
+    height: 24px;
   }
 }
 
+.header__logo-icon {
+  fill: #ffffff;
+}
+.header__logo-icon:hover {
+  fill: #c48e99;
+}
 @media (max-width: 1199px) {
   .header__logo-icon {
     width: 81px;
@@ -1211,6 +1239,7 @@ button,
 
 .header__phone {
   display: block;
+  height: 32px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 26px;
@@ -1218,6 +1247,9 @@ button,
   letter-spacing: 0.03em;
   color: #ffffff;
   text-align: right;
+}
+.header__phone:hover {
+  color: #95acc6;
 }
 @media (max-width: 1199px) {
   .header__phone {
@@ -1228,6 +1260,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__phone {
+    height: 24px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -1258,6 +1291,7 @@ button,
     display: -ms-flexbox;
     display: flex;
     gap: 0;
+    padding-bottom: 79px;
   }
 }
 
@@ -1299,7 +1333,7 @@ button,
 }
 @media (max-width: 767px) {
   .promo__city {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-size: 26px;
     line-height: 33px;
     letter-spacing: 0.03em;
@@ -1338,17 +1372,19 @@ button,
     font-size: 10.5vw;
     line-height: 11.3vw;
     letter-spacing: 0;
-    text-transform: lowercase;
+    text-transform: none;
   }
 }
 @media (max-width: 767px) {
   .promo__title {
     max-width: none;
     margin: 0;
-    margin-bottom: 26px;
+    margin-right: 2px;
+    margin-bottom: 23px;
     font-size: 25vw;
-    line-height: 26.5vw;
-    letter-spacing: 0;
+    line-height: 27vw;
+    font-weight: 800;
+    letter-spacing: -0.005em;
   }
 }
 
@@ -1372,7 +1408,12 @@ button,
 @media (max-width: 767px) {
   .promo__about {
     position: absolute;
-    margin-top: 24vw;
+    top: 24.5vw;
+    right: 55.5vw;
+    width: auto;
+    margin: 0;
+    font-size: 4.5vw;
+    line-height: 6.6vw;
   }
 }
 
@@ -1399,6 +1440,9 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+}
+.promo__buy:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1199px) {
   .promo__buy {
