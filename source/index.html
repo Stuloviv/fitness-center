@@ -40,7 +40,8 @@
             <source type="image/webp" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x" width="500"
               height="556"> -->
 
-            <source media="(max-width: 1199px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x" width="324" height="390">
+            <source media="(max-width: 1199px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x" width="324"
+              height="390">
             <img src="img/promo-desktop.jpg" srcset="img/promo-desktop@2x.jpg 2x" alt="Фото настоящего SuperGym клиента"
               width="500" height="556">
           </picture>
@@ -48,8 +49,170 @@
       </div>
     </header>
     <main>
-      <section class="">
+      <section class="gym-room">
+        <div class="gym-room__container container">
+          <div class="gym-room__wrapper">
+            <h2 class="gym-room__title">
+              Тренажерный зал
+            </h2>
+            <p class="gym-room__intro">
+              Просторный зал площадью 900&nbsp;кв/м
+            </p>
+            <p class="gym-room__text">
+              Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="gym-room__text gym-room__text--hidden">
+              В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <picture>
+            <!-- <source media="(max-width: 320px)" type="image/webp"
+              srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x" width="320" height="313">
+              <source media="(max-width: 1199px)" type="image/webp"
+              srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" width="678" height="345">
+            <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="660"
+              height="401"> -->
 
+            <source media="(max-width: 320px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x" width="320"
+              height="313">
+            <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x" width="678"
+              height="345">
+            <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" alt="Фото тренажёрного зала" width="660"
+              height="401">
+          </picture>
+          <div class="gym-room__video">
+            <div class="gym-room__video-container">
+              <div class="gym-room__video-placeholder">
+
+                <button class="gym-room__video-button" type="button">
+                  <span class="visually-hidden">Включить видео</span>
+                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_7653_167)" stroke-opacity="0.2"
+                      stroke-width="2" />
+                    <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_7653_167)" />
+                    <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+                    <defs>
+                      <linearGradient id="paint0_linear_7653_167" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ED0233" />
+                        <stop offset="1" stop-color="#003EB7" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_7653_167" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#003D85" />
+                        <stop offset="0.885417" stop-color="#B80027" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <div class="gym-room__video-player"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prices">
+        <div class="prices__container container" data-tabs="parent">
+          <h2 class="prices__title second-title">Абонементы</h2>
+          <div class="prices__toggles" data-tabs="controls">
+            <button class="prices__toggle prices__toggle--active" type="button" data-tabs="control">
+              1 месяц
+            </button>
+            <button class="prices__toggle" type="button" data-tabs="control">
+              6 месяцев
+            </button>
+            <button class="prices__toggle" type="button" data-tabs="control">
+              12 месяцев
+            </button>
+          </div>
+          <div class="prices__content" data-tabs="content">
+            <ul class="prices__cards" data-tabs="element">
+              <li class="prices__card">
+                <h3>С&nbsp;тренером</h3>
+                <p>12&nbsp;занятий</p>
+                <div class="prices__card-price-wrapper">
+                  <span>5000</span>
+                </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+              <li class="prices__card prices__card--is-active">
+                <h3>Дневной</h3>
+                <p>С&nbsp;8:00 до&nbsp;17:00</p>
+                <div class="prices__card-price-wrapper">
+                <span>1700</span>
+              </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+              <li class="prices__card">
+                <h3>Полный день</h3>
+                <p>С&nbsp;8:00 до&nbsp;22:00</p>
+                <div class="prices__card-price-wrapper">
+                <span>2700</span>
+              </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="prices__cards" data-tabs="element">
+              <li class="prices__card">
+                <h3>С&nbsp;тренером</h3>
+                <p>12&nbsp;занятий</p>
+                <div class="prices__card-price-wrapper">
+                  <span>30000</span>
+                </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+              <li class="prices__card prices__card--is-active">
+                <h3>Дневной</h3>
+                <p>С&nbsp;8:00 до&nbsp;17:00</p>
+                <div class="prices__card-price-wrapper">
+                <span>8500</span>
+              </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+              <li class="prices__card">
+                <h3>Полный день</h3>
+                <p>С&nbsp;8:00 до&nbsp;22:00</p>
+                <div class="prices__card-price-wrapper">
+                <span>15000</span>
+              </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="prices__cards" data-tabs="element">
+              <li class="prices__card">
+                <h3>С&nbsp;тренером</h3>
+                <p>12&nbsp;занятий</p>
+                <div class="prices__card-price-wrapper">
+                  <span>50000</span>
+                </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+              <li class="prices__card prices__card--is-active">
+                <h3>Дневной</h3>
+                <p>С&nbsp;8:00 до&nbsp;17:00</p>
+                <div class="prices__card-price-wrapper">
+                <span>17000</span>
+              </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+              <li class="prices__card">
+                <h3>Полный день</h3>
+                <p>С&nbsp;8:00 до&nbsp;22:00</p>
+                <div class="prices__card-price-wrapper">
+                <span>27000</span>
+              </div>
+                <a href="#" class="prices__card-link">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="announcement">
+        <div class="announcement__container container">
+          
+        </div>
       </section>
     </main>
     <footer>

@@ -4,6 +4,7 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 // @import "vendor/swiper";
+@import "vendor/data-tabs.scss";
 
 // Global
 // ---------------------------------
@@ -22,8 +23,11 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/second-title";
 @import "blocks/header";
 @import "blocks/promo";
+@import "blocks/gym-room";
+@import "blocks/prices";
 
 // ---------------------------------
 
