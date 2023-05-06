@@ -1,23 +1,56 @@
 .prices {
-  background-color: #f8f9fc;
-  background-image: url("../img/price-background.png");
-  background-repeat: no-repeat;
-  background-position: 80vw 120%;
-  // background-size: ;
+  position: relative;
+  background-image: linear-gradient(180deg, #f8f9fc 92.5%, #ffffff 7.5%);
 
-  // @media (max-width: 1199px) {
-  //   background-image: url("../img/price-background-tablet.png");
-  // }
+  @media (max-width: 1199px) {
+    background-image: linear-gradient(180deg, #f8f9fc 96%, #ffffff 4%);
+  }
 
-  // @media (min-resolution: 2dppx) {
-  //   @media (max-width: 1199px) {
-  //     background-image: url("../img/price-background-tablet@2x.png");
-  //   }
+  @media (max-width: 767px) {
+    background-image: linear-gradient(180deg, #f8f9fc 100%, #ffffff 0%);
+  }
 
-  //   @media (min-width: 1200px) {
-  //     background-image: url("../img/price-background@2x.png");
-  //   }
-  // }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -71px;
+    right: 0;
+
+    width: 287px;
+    height: 484px;
+
+    background-image: url("../img/price-background.png");
+    background-repeat: no-repeat;
+
+    @media (max-width: 1199px) {
+      bottom: -51px;
+
+      width: 347px;
+      height: 444px;
+
+      background-image: url("../img/price-background-tablet.png");
+    }
+
+    @media (max-width: 767px) {
+      background-image: none;
+    }
+
+    @media (min-resolution: 2dppx) {
+      @media (max-width: 1199px) {
+        background-size: cover;
+        background-image: url("../img/price-background-tablet@2x.png");
+      }
+
+      @media (min-width: 1200px) {
+        background-image: url("../img/price-background@2x.png");
+        background-size: cover;
+      }
+
+      @media (max-width: 767px) {
+        background-image: none;
+      }
+    }
+  }
 }
 
 .prices__container {
@@ -26,11 +59,11 @@
   align-items: center;
 
   padding-top: 120px;
-  padding-bottom: 105px;
+  padding-bottom: 206px;
 
   @media (max-width: 1199px) {
     padding-top: 101px;
-    padding-bottom: 116px;
+    padding-bottom: 190px;
   }
 
   @media (max-width: 767px) {
@@ -282,7 +315,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 44px 63px 49px;
+    padding: 44px 35px 49px;
 
     & span {
       margin-bottom: 29px;
