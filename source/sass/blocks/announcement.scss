@@ -2,10 +2,12 @@
 
 .announcement__container {
   padding-top: 51px;
-  padding-bottom: 56px;
+  padding-bottom: 106px;
 
   @media (max-width: 1199px) {
     padding-top: 26px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 767px) {
