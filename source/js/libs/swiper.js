@@ -1,5 +1,4 @@
-const swiper = () => {
-  /**
+/**
    * Swiper 7.4.1
    * Most modern mobile touch slider and framework with hardware accelerated transitions
    * https://swiperjs.com
@@ -10172,6 +10171,5 @@ const swiper = () => {
     return Swiper;
   });
   //# sourceMappingURL=swiper-bundle.js.map
-};
 
-export default swiper();
+// export default swiper();
