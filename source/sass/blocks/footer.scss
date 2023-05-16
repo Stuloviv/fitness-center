@@ -1,0 +1,146 @@
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media(max-width: 1199px) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  @media(max-width: 767px) {
+    display: block;
+
+    padding-top: 49px;
+    padding-bottom: 45px;
+  }
+}
+
+.footer__logo {
+  display: block;
+
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 8px;
+
+  @media(max-width: 1199px) {
+    margin-top: 6px;
+  }
+
+  @media(max-width: 767px) {
+    display: none;
+  }
+}
+
+.footer__logo-mobile {
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.footer__logo-icon {
+  width: 88px;
+  height: 32px;
+  fill: #ffffff;
+
+  @media(max-width: 1199px) {
+    width: 82px;
+    height: 18px;
+  }
+
+  @media(max-width: 767px) {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.footer__navigation {
+
+  @media(max-width: 767px) {
+    margin: 0;
+  }
+}
+
+.footer__navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: center;
+
+  width: 450px;
+
+  @media(max-width: 1199px) {
+    width: 391px;
+    margin-left: 5px;
+  }
+
+  @media(max-width: 767px) {
+    display: block;
+
+    column-count: 2;
+    column-gap: 76px;
+
+    width: 244px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__navigation-item {
+  &:not(:first-child):not(:last-child) {
+    margin-right: 40px;
+  }
+
+  @media(max-width: 1199px) {
+    &:not(:first-child):not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    margin-bottom: 14px;
+  }
+}
+
+.footer__navigation-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  @media(max-width: 767px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.footer__social {
+  width: 97px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 11px;
+  row-gap: 5px;
+  justify-content: flex-end;
+
+  @media(max-width: 767px) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__social-item {}
+
+.footer__social-link {}
+
+.footer__social-icon {
+  fill: #ffffff;
+}

@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import './video';
 import './price-shadow';
-import {initSlider} from './sliders';
+import {initCoachesSlider, initReviewsSlider} from './sliders';
 
 // ---------------------------------
 
@@ -29,7 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initTabs();
-    initSlider();
+    initCoachesSlider();
+    initReviewsSlider();
   });
 });
 
