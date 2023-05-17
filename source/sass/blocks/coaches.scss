@@ -21,9 +21,7 @@
     max-width: 100%;
   }
 
-  @media (max-width: 767px) {
-
-  }
+  @media (max-width: 767px) {}
 }
 
 .coaches__title {
@@ -62,8 +60,7 @@
   }
 }
 
-.coaches__list {
-}
+.coaches__list {}
 
 .coaches__item {
   position: relative;
@@ -223,20 +220,20 @@
   justify-content: space-between;
 
   width: 100%;
-  padding: 0 54px;
+  padding: 0 40px;
 
   transform: translateY(-50%);
 
   @media (max-width: 767px) {
-    padding: 0 15px;
+    padding: 0 8px;
   }
 }
 
 .coaches__toggle {
-  width: 16px;
-  height: 32px;
-  border: none;
+  display: flex;
+  justify-content: center;
 
+  border: none;
   background-color: transparent;
 
   cursor: pointer;
@@ -249,7 +246,7 @@
     transform: rotate(180deg);
   }
 
-  &:hover svg{
+  &:hover svg {
     stroke: #000000;
   }
 

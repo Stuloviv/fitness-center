@@ -31,6 +31,11 @@
   margin-top: 20px;
   margin-right: 8px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media(max-width: 1199px) {
     margin-top: 6px;
   }
@@ -115,6 +120,11 @@
   line-height: 16px;
   color: #ffffff;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media(max-width: 767px) {
     font-size: 16px;
     line-height: 18px;
@@ -139,7 +149,12 @@
 
 .footer__social-item {}
 
-.footer__social-link {}
+.footer__social-link {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
 
 .footer__social-icon {
   fill: #ffffff;

@@ -7,8 +7,8 @@ const initCoachesSlider = () => {
     loop: true,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-coaches-next',
+      prevEl: '.swiper-button-coaches-prev',
     },
     breakpoints: {
       320: {
@@ -35,8 +35,8 @@ const initReviewsSlider = () => {
     loop: false,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-reviews-next',
+      prevEl: '.swiper-button-reviews-prev',
     },
     // breakpoints: {
     //   320: {

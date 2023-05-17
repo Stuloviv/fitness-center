@@ -9,6 +9,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -2032,7 +2033,7 @@ button,
   width: 100%;
   height: 100%;
   background-image: url("../img/video-background.jpg");
-  background-color: #696969;
+  background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -2089,6 +2090,11 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.gym-room__video-player iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .prices {
@@ -2324,7 +2330,7 @@ button,
 }
 @media (max-width: 1199px) {
   .prices__card {
-    padding-bottom: 67px;
+    padding-bottom: 66px;
   }
 }
 @media (max-width: 767px) {
@@ -2428,7 +2434,7 @@ button,
 }
 .prices__card:hover span,
 .prices__card:focus-within span {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 .prices__card:hover .prices__card-link,
 .prices__card:focus-within .prices__card-link {
@@ -3020,20 +3026,24 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 0 54px;
+  padding: 0 40px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 @media (max-width: 767px) {
   .coaches__toggles {
-    padding: 0 15px;
+    padding: 0 8px;
   }
 }
 
 .coaches__toggle {
-  width: 16px;
-  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -3666,6 +3676,7 @@ button,
 @media (max-width: 767px) {
   .reviews__container {
     padding-top: 14px;
+    padding-bottom: 70px;
   }
 }
 
@@ -3686,9 +3697,24 @@ button,
   }
 }
 
-.reviews__wrapper {
+.reviews__slider-button-wrapper {
   position: relative;
   width: 560px;
+}
+@media (max-width: 1199px) {
+  .reviews__slider-button-wrapper {
+    width: 83.5%;
+    max-width: 665px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__slider-button-wrapper {
+    width: 77.6%;
+  }
+}
+
+.reviews__wrapper {
+  width: 100%;
   padding: 54px 62px 57px 62px;
   background-color: #1c3374;
   -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
@@ -3696,14 +3722,11 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__wrapper {
-    width: 83.5%;
-    max-width: 665px;
     padding-left: 65px;
   }
 }
 @media (max-width: 767px) {
   .reviews__wrapper {
-    width: 77.6%;
     padding: 40px 25px 18px 25px;
     justify-items: center;
   }
@@ -3796,28 +3819,33 @@ button,
 
 .reviews__toggles {
   position: absolute;
-  top: 50%;
+  top: 122px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  padding: 0 54px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 122%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
   .reviews__toggles {
-    padding: 0 15px;
+    top: 50%;
+    width: 134%;
   }
 }
 
 .reviews__toggle {
-  width: 16px;
-  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -3841,7 +3869,7 @@ button,
 }
 
 .swiper-button-disabled {
-  opacity: 0;
+  opacity: 0.2;
 }
 
 .bottom-block {
@@ -3855,6 +3883,11 @@ button,
   .bottom-block {
     padding-bottom: 43px;
     background: none;
+  }
+}
+@media (max-width: 767px) {
+  .bottom-block {
+    padding-bottom: 42px;
   }
 }
 
@@ -3879,6 +3912,7 @@ button,
 }
 
 .bottom-block__form {
+  position: relative;
   padding: 55px 170px 0 0;
   background-color: #102654;
 }
@@ -3901,7 +3935,7 @@ button,
   .bottom-block__form-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 34px 15px 68px;
+    padding: 63px 15px 69px;
   }
 }
 
@@ -3933,7 +3967,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 37px;
+    row-gap: 35px;
     margin-left: 0px;
   }
 }
@@ -3987,6 +4021,14 @@ button,
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.bottom-block__form .is-invalid {
+  color: #ff6347;
+}
+
+.bottom-block__form .is-valid {
+  color: #90ee90;
+}
+
 .bottom-block__form-title {
   margin: 0;
   margin-bottom: 21px;
@@ -4009,7 +4051,7 @@ button,
 @media (max-width: 767px) {
   .bottom-block__form-title {
     margin-left: 0;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -4030,7 +4072,7 @@ button,
   .bottom-block__contacts {
     width: 100%;
     margin: 0 auto;
-    padding: 62px 15px 0;
+    padding: 64px 15px 0;
   }
 }
 
@@ -4046,7 +4088,7 @@ button,
 @media (max-width: 767px) {
   .bottom-block__contacts-title {
     margin-left: 0px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 }
 
@@ -4147,12 +4189,45 @@ button,
   line-height: 21px;
   font-weight: 400;
 }
+.bottom-block__contacts-phone:hover, .bottom-block__contacts-phone:focus,
+.bottom-block__contacts-email:hover,
+.bottom-block__contacts-email:focus {
+  opacity: 0.5;
+}
 @media (max-width: 1199px) {
   .bottom-block__contacts-phone,
 .bottom-block__contacts-email {
     font-size: 18px;
     line-height: 27px;
   }
+}
+
+.booking__form-success-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #102654;
+}
+
+.booking__form-success-message {
+  display: none;
 }
 
 .footer {
@@ -4192,6 +4267,9 @@ button,
   margin: 0;
   margin-top: 20px;
   margin-right: 8px;
+}
+.footer__logo:hover, .footer__logo:focus {
+  opacity: 0.5;
 }
 @media (max-width: 1199px) {
   .footer__logo {
@@ -4286,6 +4364,9 @@ button,
   line-height: 16px;
   color: #ffffff;
 }
+.footer__navigation-link:hover, .footer__navigation-link:focus {
+  opacity: 0.5;
+}
 @media (max-width: 767px) {
   .footer__navigation-link {
     font-size: 16px;
@@ -4317,6 +4398,10 @@ button,
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+}
+
+.footer__social-link:hover, .footer__social-link:focus {
+  opacity: 0.5;
 }
 
 .footer__social-icon {
