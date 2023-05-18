@@ -5,6 +5,7 @@ import browserify from 'browserify';
 import uglify from 'gulp-uglify';
 import vinylBuffer from 'vinyl-buffer';
 import vinylSourceStream from 'vinyl-source-stream';
+import terser from 'gulp-terser';
 
 const compileMainMinScripts = () =>
   browserify('source/js/main.js', {debug: true})
@@ -22,6 +23,7 @@ const compileMainScripts = () =>
       .bundle()
       .pipe(vinylSourceStream('main.js'))
       .pipe(vinylBuffer())
+      .pipe(terser())
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(concat('main.min.js'))
       .pipe(sourcemaps.write('.'))
