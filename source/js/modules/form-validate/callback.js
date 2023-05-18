@@ -1,5 +1,5 @@
 const setMessage = () => {
-  const messageElement = document.querySelector('.booking__form-success-message');
+  const messageElement = document.querySelector('.bottom-block-success-message');
   messageElement.style.display = 'flex';
   setTimeout(() => {
     messageElement.style.display = 'none';

@@ -4,8 +4,7 @@
   font-family: "Rouble";
 
   font-display: swap;
-  src:
-    url("../fonts/rouble.woff2") format("woff2");
+  src: url("../fonts/rouble.woff2") format("woff2");
 }
 
 @font-face {
@@ -54,10 +53,10 @@
 }
 
 @font-face {
-	font-family: "Alumni Sans";
+  font-family: "Alumni Sans";
   font-weight: 800;
-	font-style: normal;
+  font-style: normal;
   font-display: swap;
-	src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"),
+  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"),
     url("../fonts/AlumniSans-ExtraBold.woff") format("woff");
 }

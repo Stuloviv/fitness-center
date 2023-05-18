@@ -20,8 +20,6 @@
   @media (max-width: 1199px) {
     max-width: 100%;
   }
-
-  @media (max-width: 767px) {}
 }
 
 .coaches__title {
@@ -60,8 +58,6 @@
   }
 }
 
-.coaches__list {}
-
 .coaches__item {
   position: relative;
   z-index: 10;
@@ -70,8 +66,6 @@
 
   cursor: pointer;
 
-  // transform-style: preserve-3d;
-  // perspective: 1000px;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -79,7 +73,6 @@
   &:focus-within {
     .coaches__front-wrapper {
       z-index: 1;
-      // transform: rotateY(180deg);
     }
 
     .coaches__front-wrapper h3 {
@@ -88,7 +81,6 @@
 
     .coaches__card {
       z-index: 10;
-      // transform: rotateY(360deg);
     }
   }
 
@@ -150,10 +142,6 @@
   color: #ffffff;
 
   background-color: rgba(16, 38, 84, 0.89);
-
-  // transition-duration: 1s;
-  // transform: rotateY(180deg);
-  // backface-visibility: hidden;
 
   @media (max-width: 767px) {
     padding: 41px 0px 41px 0px;
