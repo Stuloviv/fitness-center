@@ -1521,8 +1521,8 @@ button,
 }
 
 .header {
-  background-color: #003d85;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-color: #003d85;
 }
 @media (max-width: 767px) {
   .header {
@@ -2965,24 +2965,24 @@ button,
           align-items: center;
   width: 100%;
   height: 100%;
-  padding: 51px 0px 50px 0px;
+  padding: 51px 0 50px;
   color: #ffffff;
   background-color: rgba(16, 38, 84, 0.89);
 }
 @media (max-width: 767px) {
   .coaches__card {
-    padding: 41px 0px 41px 0px;
+    padding: 41px 0 41px;
   }
 }
 
 .coaches__card-wrapper {
-  width: 160px;
+  padding: 0 45px 0 53px;
   overflow-y: scroll;
 }
 
 .coaches__card span {
   display: block;
-  margin-left: 7px;
+  margin-left: -9px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
@@ -3265,7 +3265,8 @@ button,
   background-image: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
   background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
 }
 @media (max-width: 1199px) {
   .advantages__number {
@@ -3716,8 +3717,8 @@ button,
   width: 100%;
   padding: 54px 62px 57px 62px;
   background-color: #1c3374;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
 @media (max-width: 1199px) {
   .reviews__wrapper {
@@ -3968,7 +3969,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 35px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -4087,7 +4088,7 @@ button,
 }
 @media (max-width: 767px) {
   .bottom-block__contacts-title {
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 35px;
   }
 }
@@ -4207,9 +4208,7 @@ button,
   top: 0;
   left: 0;
   z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4224,10 +4223,6 @@ button,
   text-align: center;
   color: #ffffff;
   background-color: #102654;
-}
-
-.bottom-block-success-message {
-  display: none;
 }
 
 .footer {

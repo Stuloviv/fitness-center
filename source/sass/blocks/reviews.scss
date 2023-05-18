@@ -1,5 +1,3 @@
-.reviews {}
-
 .reviews__container {
   position: relative;
   display: flex;
@@ -55,7 +53,7 @@
 
   background-color: #1c3374;
 
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 
   @media (max-width: 1199px) {
     padding-left: 65px;

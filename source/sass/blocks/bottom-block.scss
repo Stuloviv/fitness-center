@@ -4,13 +4,13 @@
 
   background: linear-gradient(to right, $color-default-black 50%, #ffffff 50%);
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     padding-bottom: 43px;
 
     background: none;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     padding-bottom: 42px;
   }
 }
@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     display: flex;
     flex-direction: column;
 
@@ -34,22 +34,21 @@
   padding: 55px 170px 0 0;
   background-color: $color-default-black;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     width: 100%;
     padding: 0;
   }
 }
 
 .bottom-block__form-wrapper {
-
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     width: 472px;
     margin: 0 auto;
     padding-top: 62px;
     padding-bottom: 68px;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     width: 100%;
     margin: 0 auto;
     padding: 63px 15px 69px;
@@ -62,19 +61,19 @@
   column-gap: 30px;
   row-gap: 28px;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     column-gap: 60px;
 
     width: 100%;
     margin-left: -15px;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     row-gap: 35px;
 
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -147,7 +146,7 @@
   color: #ffffff;
   letter-spacing: 0.03em;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-bottom: 36px;
     margin-left: -15px;
 
@@ -156,7 +155,7 @@
     font-weight: 700;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     margin-left: 0;
     margin-bottom: 35px;
 
@@ -168,14 +167,14 @@
 .bottom-block__contacts {
   padding: 56px 0 0 120px;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     width: 472px;
     margin: 0 auto;
     padding: 0;
     padding-top: 62px;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     width: 100%;
     margin: 0 auto;
     padding: 64px 15px 0;
@@ -185,13 +184,13 @@
 .bottom-block__contacts-title {
   margin-bottom: 37px;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-bottom: 32px;
     margin-left: -15px;
   }
 
-  @media(max-width: 767px) {
-    margin-left: 0px;
+  @media (max-width: 767px) {
+    margin-left: 0;
     margin-bottom: 35px;
   }
 }
@@ -215,7 +214,7 @@
     background-color: #74819c;
   }
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-left: -15px;
 
     &::after {
@@ -225,7 +224,7 @@
     }
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     flex-direction: column;
 
     margin-left: 0;
@@ -239,21 +238,19 @@
 .bottom-block__contacts-address-opening {
   margin-right: 121px;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-right: 97px;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     margin-right: 0;
   }
 }
 
-.bottom-block__contacts-links {}
-
 .bottom-block__contacts-item {
   margin-bottom: 18px;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-bottom: 21px;
   }
 }
@@ -265,7 +262,7 @@
   line-height: 21px;
   font-weight: 400;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     font-size: 18px;
     line-height: 27px;
   }
@@ -279,17 +276,13 @@
   line-height: 24px;
   font-weight: 700;
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-bottom: 4px;
 
     font-size: 20px;
     line-height: 30px;
   }
 }
-
-.bottom-block__contacts-address {}
-
-.bottom-block__contacts-opening {}
 
 .bottom-block__contacts-phone,
 .bottom-block__contacts-email {
@@ -304,7 +297,7 @@
     opacity: 0.5;
   }
 
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     font-size: 18px;
     line-height: 27px;
   }
@@ -316,7 +309,7 @@
   left: 0;
   z-index: 10;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 
@@ -330,8 +323,4 @@
   color: $color-default-white;
 
   background-color: $color-default-black;
-}
-
-.bottom-block-success-message {
-  display: none;
 }
