@@ -38,7 +38,7 @@
   }
 }
 
-.gym-room__title {
+.gym-room h2 {
   margin: 0;
   margin-bottom: 8px;
 
@@ -65,7 +65,9 @@
   }
 }
 
-.gym-room__intro {
+.gym-room span {
+  display: block;
+
   margin: 0;
   margin-bottom: 40px;
 
@@ -90,7 +92,7 @@
   }
 }
 
-.gym-room__text {
+.gym-room p {
   margin: 0;
   margin-bottom: 8px;
 
@@ -116,7 +118,7 @@
   }
 }
 
-.gym-room__text--hidden {
+.gym-room p:last-child {
   margin: 0;
 
   @media (max-width: 1199px) {
