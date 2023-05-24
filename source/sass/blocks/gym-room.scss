@@ -50,6 +50,7 @@
 
   @media (max-width: 1199px) {
     margin-bottom: 6px;
+    margin-left: -10px;
 
     font-size: 5.6vw;
     line-height: 4.6vw;
@@ -58,6 +59,7 @@
 
   @media (max-width: 767px) {
     margin-bottom: 4px;
+    margin-left: 0;
 
     font-size: 32px;
     line-height: 38px;
@@ -140,7 +142,7 @@
 
 .gym-room__video {
   position: absolute;
-  bottom: 120px;
+  top: 408px;
   left: 37.7%;
 
   width: 364px;
@@ -148,6 +150,7 @@
   background-color: #000000;
 
   @media (max-width: 1199px) {
+    top: auto;
     bottom: 100px;
     left: 50%;
 

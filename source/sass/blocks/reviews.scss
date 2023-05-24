@@ -8,7 +8,7 @@
   padding-bottom: 120px;
 
   @media (max-width: 1199px) {
-    padding-top: 43px;
+    padding-top: 42px;
     padding-bottom: 99px;
   }
 
@@ -143,14 +143,13 @@
   display: flex;
   justify-content: space-between;
 
-  width: 122%;
+  width: 100%;
   left: 50%;
 
   transform: translate(-50%, -50%);
 
   @media (max-width: 767px) {
     top: 50%;
-    width: 134%;
   }
 }
 
@@ -167,11 +166,15 @@
     stroke: #afafaf;
   }
 
-  &--prev {
-    transform: rotate(180deg);
+  &--next{
+    transform: translateX(63px);
   }
 
-  &:hover svg {
+  &--prev {
+    transform: rotate(180deg) translateX(63px);
+  }
+
+  &:not([disabled]):hover svg {
     stroke: #000000;
   }
 
@@ -180,10 +183,18 @@
       width: 10px;
       height: 19px;
     }
+
+    &--next{
+      transform: translateX(38px);
+    }
+
+    &--prev {
+      transform: rotate(180deg) translateX(38px);
+    }
   }
 }
 
 .swiper-button-disabled {
-  opacity: 0;
+  opacity: 0.5;
   cursor: default;
 }

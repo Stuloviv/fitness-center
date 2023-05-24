@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 377px 500px;
   gap: 64px;
-  padding: 51px 198px 51px 19px;
+  padding: 60px 198px 51px 19px;
 
   color: $color-default-white;
 
@@ -58,6 +58,8 @@
   }
 
   @media (max-width: 767px) {
+    width: 284px;
+    margin: 0 auto;
     margin-bottom: 12px;
 
     font-size: 26px;
@@ -68,16 +70,29 @@
 
 .promo__title-about-wrapper {
   display: flex;
+  flex-wrap: wrap;
+
+  width: 380px;
+
+  @media (max-width: 1199px) {
+    width: 324px;
+    margin-left: auto;
+  }
 
   @media (max-width: 767px) {
     position: relative;
 
     display: block;
+
+    width: 290px;
+    margin: 0 auto;
   }
 }
 
 .promo__title {
+  width: min-content;
   margin: 0;
+  margin-left: auto;
   margin-bottom: 50px;
 
   font-family: $ff-second-font;
@@ -89,27 +104,27 @@
   text-align: right;
 
   @media (max-width: 1199px) {
-    max-width: 60%;
     font-weight: 700;
     margin-right: 2px;
     margin-bottom: 37px;
 
-    font-size: 10.5vw;
-    line-height: 11.3vw;
+    font-size: 80px;
+    line-height: 86px;
     letter-spacing: 0;
     text-transform: none;
   }
 
   @media (max-width: 767px) {
+    width: auto;
     max-width: none;
     margin: 0;
     margin-right: 2px;
     margin-bottom: 23px;
 
-    font-size: 25vw;
-    line-height: 27vw;
+    font-size: 78px;
+    line-height: 86px;
     font-weight: 800;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
 }
 
@@ -126,20 +141,17 @@
   text-align: right;
 
   @media (max-width: 1199px) {
-    margin-top: 11.6vw;
+    margin-top: 89px;
     margin-left: auto;
   }
 
   @media (max-width: 767px) {
     position: absolute;
-    top: 24.5vw;
-    right: 55.5vw;
+    top: 78px;
+    right: 178px;
 
     width: auto;
     margin: 0;
-
-    font-size: 4.5vw;
-    line-height: 6.6vw;
   }
 }
 
@@ -162,6 +174,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
+
+  user-select: none;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
@@ -186,6 +200,10 @@
   max-width: 100%;
 
   object-fit: cover;
+
+  @media (max-width: 1199px) {
+    max-width: 400px;
+  }
 
   @media (max-width: 767px) {
     display: none;

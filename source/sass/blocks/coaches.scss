@@ -31,6 +31,7 @@
   @media (max-width: 1199px) {
     max-width: 100%;
     margin-bottom: 31px;
+    padding-right: 6px;
 
     text-align: center;
   }
@@ -106,13 +107,15 @@
   bottom: 24px;
   left: 50%;
 
-  width: max-content;
+  width: 90%;
   margin: 0;
+  padding: 0 10px;
 
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
 
   transform: translateX(-50%);
 }
@@ -152,6 +155,10 @@
   padding: 0 45px 0 53px;
 
   overflow-y: scroll;
+
+  @media (max-width: 767px) {
+    padding: 0 33px 53px;
+  }
 }
 
 .coaches__card span {
@@ -162,6 +169,10 @@
   line-height: 27px;
   font-weight: 700;
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-left: -1px;
+  }
 }
 
 .coaches__card h4 {
@@ -203,6 +214,7 @@
 .coaches__toggles {
   position: absolute;
   top: 50%;
+  left: 50%;
 
   display: flex;
   justify-content: space-between;
@@ -210,10 +222,11 @@
   width: 100%;
   padding: 0 40px;
 
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 
   @media (max-width: 767px) {
-    padding: 0 8px;
+    width: 94%;
+    padding: 0;
   }
 }
 

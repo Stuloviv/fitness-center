@@ -63,7 +63,7 @@
 
   @media (max-width: 1199px) {
     padding-top: 101px;
-    padding-bottom: 190px;
+    padding-bottom: 191px;
   }
 
   @media (max-width: 767px) {
@@ -165,7 +165,7 @@
 .prices__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
+  gap: 40px;
 
   padding: 0;
 
@@ -174,7 +174,7 @@
   @media (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 41px;
 
     width: 65.5%;
   }
@@ -283,6 +283,9 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
+
+  user-select: none;
 
   @media (max-width: 767px) {
     width: 100%;
